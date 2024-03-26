@@ -33,7 +33,8 @@ function maxRun(string) {
 
 
 // input
-const string = createPrompt("Enter a string: ")
+const userString = createPrompt("Enter a string: ")
+const string = userString.value
 
 // error check
 if (string.trim().length === 0) {
