@@ -33,7 +33,7 @@ function maxRun(string) {
 
 // input
 const userString = createPrompt("Enter a string: ")
-const string = parseFloat(userString.value || "-1")
+const string = parseString(userString.value || "-1")
 
 // error check
 if (string < 0) {
