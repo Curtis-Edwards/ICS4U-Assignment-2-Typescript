@@ -15,17 +15,17 @@ function maxRun(string) {
    * this function calculates the max run of a string
    */
   let maxRun = 1
-  let preivousChar = ""
+  let previousChar = ""
 
   for (let char of string) {
     let currentRun = 1
-    if (preivousChar === char) {
+    if (previousChar === char) {
       currentRun++
       if (currentRun > maxRun) {
         maxRun = currentRun
       }
     }
-    let preivousChar = char
+    let previousChar = char
   }
 
   return maxRun
@@ -35,14 +35,17 @@ function maxRun(string) {
 // input
 const userString = createPrompt("Enter a string: ")
 let string = userString.value
+let maxRun = maxRun(string)
+// output
+console.log(`The string ${string} has a max run of ${maxRun}!`)
 // error check
-if (string.length === 0) {
+/*if (string.length === 0) {
   console.log("Invalid input.")
 } else {
   // process
   let maxRun = maxRun(string)
   // output
   console.log(`The string ${string} has a max run of ${maxRun}!`)
-}
+}*/
 
 console.log("\nDone.")
