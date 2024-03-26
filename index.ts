@@ -10,14 +10,14 @@
 import { createPrompt } from 'bun-promptx'
 
 
-function maxRun(string) {
+function maxRun(str) {
   /*
    * this function calculates the max run of a string
    */
   let maxRun = 1
   let preivousChar = ""
 
-  for (let char of string) {
+  for (let char of str) {
     let currentRun = 1
     if (preivousChar = char) {
       currentRun++
@@ -33,16 +33,16 @@ function maxRun(string) {
 
 // input
 const userString = createPrompt("Enter a string: ")
-const string = parseString(userString.value || "-1")
+const str = parseString(userString.value || "-1")
 
 // error check
-if (string < 0) {
+if (str < 0) {
   console.log("Invalid input.")
 } else {
   // process
-  let maxRun = maxRun(string)
+  let maxRun = maxRun(str)
   // output
-  console.log(`The string ${string} has a max run of ${maxRun}!`)
+  console.log(`The string ${str} has a max run of ${maxRun}!`)
 }
 
 console.log("\nDone.")
