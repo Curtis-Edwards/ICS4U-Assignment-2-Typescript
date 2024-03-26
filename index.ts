@@ -33,11 +33,10 @@ function maxRun(string) {
 
 
 // input
-const userString = createPrompt("Enter a string: ")
-const string = parseString(userString.value || "-1")
+const string = createPrompt("Enter a string: ")
 
 // error check
-if (string < 0) {
+if (string.trim().length === 0) {
   console.log("Invalid input.")
 } else {
   // process
