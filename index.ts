@@ -10,7 +10,7 @@
 import { createPrompt } from 'bun-promptx'
 
 
-function maxRun(string) {
+function maxRunFunction(string) {
   /*
    * this function calculates the max run of a string
    */
@@ -35,7 +35,7 @@ function maxRun(string) {
 // input
 const userString = createPrompt("Enter a string: ")
 let string = userString.value
-let maxRun = maxRun(string)
+let maxRun = maxRunFunction(string)
 // output
 console.log(`The string ${string} has a max run of ${maxRun}!`)
 // error check
