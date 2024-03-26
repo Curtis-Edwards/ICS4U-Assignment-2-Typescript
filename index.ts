@@ -19,7 +19,7 @@ function maxRun(string) {
 
   for (let char of string) {
     let currentRun = 1
-    if (preivousChar = char) {
+    if (preivousChar === char) {
       currentRun++
       if (currentRun > maxRun) {
         maxRun = currentRun
