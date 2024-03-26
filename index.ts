@@ -35,15 +35,15 @@ function maxRun(string) {
 // input
 const userString = createPrompt("Enter a string: ")
 const string = userString.value
-
+console.log(string)
 // error check
-if (string.trim().length === 0) {
+/*if (string.trim().length === 0) {
   console.log("Invalid input.")
 } else {
   // process
   let maxRun = maxRun(string)
   // output
   console.log(`The string ${string} has a max run of ${maxRun}!`)
-}
+}*/
 
 console.log("\nDone.")
