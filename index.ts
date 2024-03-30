@@ -17,9 +17,9 @@ function maxRunFunction(string) {
   let maxRun = 1
   let previousChar = ""
 
-  for (let char of string) {
+  for (let i = 0; i < myString.length; i++) {
     let currentRun = 1
-    if (previousChar === char) {
+    if (previousChar === i) {
       currentRun++
       if (currentRun > maxRun) {
         maxRun = currentRun
