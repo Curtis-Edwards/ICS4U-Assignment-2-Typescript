@@ -17,7 +17,7 @@ function maxRunFunction(string) {
   let maxRun = 1
   let previousChar = ""
 
-  for (let char of string) {
+  /*for (let char of string) {
     let currentRun = 1
     if (previousChar === char) {
       currentRun++
@@ -26,7 +26,7 @@ function maxRunFunction(string) {
       }
     }
     let previousChar = char
-  }
+  }*/
 
   return maxRun
 }
@@ -39,13 +39,13 @@ let maxRun = maxRunFunction(string)
 // output
 console.log(`The string ${string} has a max run of ${maxRun}!`)
 // error check
-/*if (string.length === 0) {
+if (string.length === 0) {
   console.log("Invalid input.")
 } else {
   // process
   let maxRun = maxRun(string)
   // output
   console.log(`The string ${string} has a max run of ${maxRun}!`)
-}*/
+}
 
 console.log("\nDone.")
