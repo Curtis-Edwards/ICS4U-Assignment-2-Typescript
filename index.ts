@@ -35,7 +35,6 @@ function maxRunFunction(string) {
 // input
 const userString = createPrompt("Enter a string: ")
 const string = userString.value
-string = string + " "
 // error check
 if (string.length === 0) {
   console.log("Invalid input.")
