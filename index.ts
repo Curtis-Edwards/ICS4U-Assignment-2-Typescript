@@ -35,7 +35,6 @@ function maxRunFunction(string) {
 // input
 const userString = createPrompt("Enter a string: ")
 const string = userString.value
-let maxRun = maxRunFunction(string)
 // output
 console.log(`The string ${string} has a max run of ${maxRun}!`)
 // error check
