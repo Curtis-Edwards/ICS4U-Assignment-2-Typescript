@@ -19,7 +19,8 @@ function maxRunFunction(string) {
   let currentRun = 0
 
   for (let i = 0; i <= string.length; i++) {
-    if (string[i] === string[i + 1]) {
+    console.log(string[i])
+    /*if (string[i] === string[i + 1]) {
       currentRun++
       if (currentRun > maxRun) {
         maxRun = currentRun
@@ -27,7 +28,7 @@ function maxRunFunction(string) {
     } else {
       currentRun = 0
     }
-    previousChar = string[i]
+    previousChar = string[i]*/
   }
 
   return maxRun
