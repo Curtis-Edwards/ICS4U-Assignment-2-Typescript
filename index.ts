@@ -16,6 +16,7 @@ function maxRunFunction(string) {
    */
   let maxRun = 1
   let previousChar = ""
+  console.log(string.length)
 
   for (let i = 0; i < string.length; i++) {
     let currentRun = 1
