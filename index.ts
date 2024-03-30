@@ -10,7 +10,7 @@
 import { createPrompt } from 'bun-promptx'
 
 
-function maxRunFunction(string) {
+function maxRun(string) {
   /*
    * this function calculates the max run of a string
    */
