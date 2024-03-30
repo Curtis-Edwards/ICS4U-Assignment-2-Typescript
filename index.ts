@@ -16,14 +16,16 @@ function maxRunFunction(string) {
    */
   let maxRun = 1
   let previousChar = ""
+  let currentRun = 1
 
   for (let i = 0; i <= string.length; i++) {
-    let currentRun = 1
     if (string[i] === string[i + 1]) {
       currentRun++
       if (currentRun > maxRun) {
         maxRun = currentRun
       }
+    } else {
+      currentRun = 1
     }
     previousChar = string[i]
   }
