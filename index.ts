@@ -17,15 +17,15 @@ function maxRunFunction(string) {
   let maxRun = 1
   let previousChar = ""
 
-  for (let i = 0; i < myString.length; i++) {
+  for (let i = 0; i < string.length; i++) {
     let currentRun = 1
-    if (previousChar === i) {
+    if (previousChar === string[i]) {
       currentRun++
       if (currentRun > maxRun) {
         maxRun = currentRun
       }
     }
-    let previousChar = char
+    let previousChar = string[i]
   }
 
   return maxRun
