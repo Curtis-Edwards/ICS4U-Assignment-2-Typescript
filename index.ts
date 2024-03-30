@@ -25,7 +25,7 @@ function maxRunFunction(string) {
         maxRun = currentRun
       }
     }
-    let previousChar = string[i]
+    previousChar = string[i]
   }
 
   return maxRun
