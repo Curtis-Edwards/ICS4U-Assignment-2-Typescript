@@ -16,8 +16,8 @@ function palindrome(userString: string): boolean {
   let reversedString: string = ""
   let isPalindrome: boolean
   // reverse string
-    for (let counter = string.length - 1; counter >= 0; counter--) {
-        reversedString += string[counter]
+    for (let counter = userString.length - 1; counter >= 0; counter--) {
+        reversedString += userString[counter]
     }
   // check if string is palindrome
   if (userString === reversedString) {
