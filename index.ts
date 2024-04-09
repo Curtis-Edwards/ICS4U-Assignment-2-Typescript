@@ -9,18 +9,18 @@
 import { createPrompt } from 'bun-promptx'
 
 
-function palindrome(userString: string): boolean {
+function palindrome(string: string): boolean {
   /*
    * This function calculates if a string is a palindrome
    */
   let reversedString: string = ""
   let isPalindrome: boolean
   // reverse string
-    for (let counter = userString.length - 1; counter >= 0; counter--) {
-        reversedString += userString[counter]
+    for (let counter = string.length - 1; counter >= 0; counter--) {
+        reversedString += string[counter]
     }
   // check if string is palindrome
-  if (userString === reversedString) {
+  if (string === reversedString) {
     isPalindrome = true
   } else {
     isPalindrome = false
@@ -31,19 +31,19 @@ function palindrome(userString: string): boolean {
 
 
 // input
-const string = createPrompt("Enter a string: ")
-const userString = userString.value
+const userString = createPrompt("Enter a string: ")
+const string = userString.value
 // error check
-if (userString.length === 0) {
+if (string.length === 0) {
   console.log("Invalid input.")
 } else {
   // process
-  let isPalindrome = palindrome(userString)
+  let isPalindrome = palindrome(string)
   // output
   if (isPalindrome) {
-    console.log(`${userString} is a palindrome.`)
+    console.log(`${string} is a palindrome.`)
   } else {
-    console.log(`${userString} is NOT a palindrome.`)
+    console.log(`${string} is NOT a palindrome.`)
   }
 }
 
