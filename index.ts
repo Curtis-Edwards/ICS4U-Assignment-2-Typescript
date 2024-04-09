@@ -14,7 +14,7 @@ function palindrome(string) {
    * This function calculates if a string is a palindrome
    */
   let reversedString = "";
-    for (let counter = string.length; counter >= 0; counter--) {
+    for (let counter = string.length - 1; counter >= 0; counter--) {
         reversedString += string[counter];
     }
 
