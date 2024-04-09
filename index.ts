@@ -1,34 +1,24 @@
 /*
- * Given a string, returns the length 
- * of the largest run in the string.
+ * this is the Palindrome program
  *
  * @author  Curtis Edwards
  * @version 1.0
- * @since   2024-03-25
+ * @since   2024-04-09
  */
 
 import { createPrompt } from 'bun-promptx'
 
 
-function maxRunFunction(string) {
+function palindrome(string) {
   /*
-   * this function calculates the max run of a string
+   * This function calculates if a string is a palindrome
    */
-  let maxRun = 1
-  let currentRun = 1
-
-  for (let i = 0; i < string.length; i++) {
-    if (string[i] === string[i + 1]) {
-      currentRun++
-      if (currentRun > maxRun) {
-        maxRun = currentRun
-      }
-    } else {
-      currentRun = 1
+  let reversedString = "";
+    for (let counter = input.length - 1; counter >= 0; counter--) {
+        reversedString += input[i];
     }
-  }
 
-  return maxRun
+  return reversedString
 }
 
 
@@ -40,9 +30,9 @@ if (string.length === 0) {
   console.log("Invalid input.")
 } else {
   // process
-  let maxRun = maxRunFunction(string)
+  let isPalindrome = palindrome(string)
   // output
-  console.log(`The string "${string}" has a max run of ${maxRun}!`)
+  console.log(isPalindrome)
 }
 
 console.log("\nDone.")
