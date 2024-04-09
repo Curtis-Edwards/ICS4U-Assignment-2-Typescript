@@ -17,7 +17,7 @@ function palindrome(string) {
   let isPalindrome
   // reverse string
   for (let counter = string.length - 1; counter >= 0; counter--) {
-      reversedString += string[counter]
+    reversedString += string[counter]
   }
   // check if string is palindrome (capitalization doesn't matter)
   if (string.toLowerCase() === reversedString.toLowerCase()) {
