@@ -9,12 +9,12 @@
 import { createPrompt } from 'bun-promptx'
 
 
-function palindrome(string: string): boolean {
+function palindrome(string) {
   /*
    * This function calculates if a string is a palindrome
    */
-  let reversedString: string = ""
-  let isPalindrome: boolean
+  let reversedString = ""
+  let isPalindrome
   // reverse string
     for (let counter = string.length - 1; counter >= 0; counter--) {
         reversedString += string[counter]
