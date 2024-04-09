@@ -15,7 +15,7 @@ function palindrome(string) {
    */
   let reversedString = "";
     for (let counter = string.length - 1; counter >= 0; counter--) {
-        reversedString += input[i];
+        reversedString += string[i];
     }
 
   return reversedString
